@@ -21,9 +21,7 @@ One thing I must continually emphasize is that the technology alone, regardless 
 
 ## An Ecosystem Blueprint
 
-We had to figure out everything from scratch. I hope this article will help fledgling ecosystem architects to gain a head start in their organization. Consider it a guide, or a blueprint, but be mindful of the unique needs of your own organization.
-
-I will use my experience at ASML as an example, see my [JuliaCon presentation](https://live.juliacon.org/talk/EKZHPS) for more information. Our organization is vast, with many different departments doing different things. Yet people still need certain common tools, such as parsers for company-specific data formats, or common plot types. We needed to accommodate that. Looking at the success of the open-source communities, I desired to create a similar inner-source ecosystem.
+We had to figure out everything from scratch. I hope this article will help fledgling ecosystem architects to gain a head start in their organization. Consider it a guide, or a blueprint, but be mindful of the unique needs of your own organization. I will use my own experience as an example, see my [JuliaCon presentation](https://live.juliacon.org/talk/EKZHPS) for more information.
 
 As architects of this ecosystem, our main design choice was to have a development workflow that feels similar to being an open-source developer, to help onboard scientists and engineers with little friction. You should be able to install internal packages via a standard package manager, `Pkg` in the case of Julia. You can use your favorite IDE, though we advised VS Code due to the Julia plugin maturity. You work on GIT with code reviews. You have automated testing pipelines to check your commits and pull requests. Ideally, all code and tools are available to all engineers, that's what I call "inner-source". Everything should feel instantly recognizable, even if we use slightly different tools and practices than the open-source community.
 
